@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,600&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Cardo', serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul li{
+    list-style: none;
+}
+.contianer{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-section .contianer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    max-width: 1200px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+.header-section .contianer .header-ber a{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+.header-section .contianer .header-ber{
+    display: none;
+}
+
+.header-section {
+    position: fixed;
+    width: 100%;
+}
+.header-section .contianer .header-manu ul{
+    display: flex;
+}
+.header-section .header-manu ul li a{
+    padding: 14px 30px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+.header-section .header-manu ul li:last-child a{
+    padding-right: 0;
+}
+/* ----------Banner Section----------- */
+.banner-section{
+    background-image: url(./Image/ActiveBox\ benar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top:  256px;
+    padding-bottom: 156px;
+}
+.banner-section .contianer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+
+}
+.banner-section .contianer h2{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 70px;
+    text-align: center;
+}
+.banner-section .contianer p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400px;
+    margin-top: 40px;
+    margin-bottom: 76px;
+    padding: 0 140px;
+    text-align: center;
+}
+.banner-section .contianer a{
+    padding: 18px 54px;
+    background-color: #E84545;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+   
+}
+
+@media screen and (max-width: 900px) {
+    .header-section .contianer .header-manu ul{
+        display: none;
+    }
+    .header-section .contianer .header-ber{
+        display: inline-block;
+    }
+    .header-section .contianer{
+        height: 80px;
+        padding: 0 30px;
+    }
+    .banner-section .contianer{
+        
+    }
+    .banner-section .contianer h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 35px;
+    text-align: center;
+    }
+    .banner-section .contianer p{
+    font-size: 15px;
+    font-weight: 300px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+    text-align: center;
+    padding: 0 20px;
+    }
+    .banner-section .contianer a{
+        padding: 10px 35px;
+        font-weight: 400;
+    }
+    
+}
+.service-section{
+    padding: 120px 0;
+}
+.service-section .contianer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    row-gap: 78px;
+    column-gap: 5%;
+}
+.service-section .contianer .service-item{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 26px;
+}
+.service-section .contianer .service-item p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.service-section .contianer .service-item h2{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 26px;
+}
+
+/* ---------Gallery Section---------- */
+.gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+.gallery-section .gallery-item{
+    max-width: 24.94%;
+    position: relative;
+    cursor: pointer;
+}
+.gallery-section .gallery-item img{
+    width: 100%;
+    height: 100%;
+    
+}
+.gallery-section .gallery-item .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s all ease-in-out;
+}
+.gallery-section .gallery-item:hover .overlay{
+    background-color: rgba(218, 71, 71, 0.8);
+}
+.gallery-item-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden;
+    transition: 0.4s all ease-in-out;
+}
+.gallery-item-content h3{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.gallery-item-content p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.gallery-section .gallery-item:hover .gallery-item-content{
+    visibility: visible;
+}
+
+/* ----------Team Section------------- */
+.team-section .contianer{
+    max-width: 1200px;
+    padding: 100px 15px;
+    display: flex;
+    column-gap: 30px;
+}
+.team-section .contianer .image-item img{
+    max-width: 100%;
+}
+.team-section .contianer .image-item h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 30px 0 15px 0;
+}
+.team-section .contianer .image-item .designation{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: #E84545;
+}
+.team-section .contianer .image-item .icon .fa-brands{
+   color: rgb(123, 121, 121);
+   border: 1px solid rgb(123, 121, 121);
+   padding: 10px;
+   margin: 0 2px;
+}
+.team-section .contianer .image-item .icon{
+    padding-top: 30px;
+}
+.team-section .contianer .image-item .para{
+    color: rgb(44, 43, 43);
+}
+
+.female-section{
+    display: flex;
+}
+.female-section .female-section-div{
+    max-width: 50%;
+    max-height: 500px;
+}
+
+.female-section .text{
+    background-color: #53354A;
+    padding: 115px 140px 100px 85px;
+}
+
+.female-section .text .para-2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.female-section .text .para{
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 36px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.female-section .female-section-div img{
+  max-width: 700px;
+  height: 100%;
+  
+}
+.last-section{
+    padding: 100px 0;
+    text-align: center;
+}
+.last-section h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+.last-section .para{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 22px 0 42px 0;
+    text-transform: uppercase;
+}
+.last-section button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #E84545;
+    border: none;  
+    padding: 18px 85px;
+    border-radius: 5px;
+}
+.footer-section{
+    background-color: #3A3E64;
+}
+.footer-section .contianer{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 50px 105px 50px;
+}
+.footer-section .contianer .contianer-div{
+    max-width: 33.33%;
+}
+.footer-section .contianer .location{
+    color: #fff;
+    text-align: center;
+}
+.footer-section .contianer .location p{
+    padding: 22px 80px 0 80px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #a7a6a6;
+}
+.footer-section .contianer .i-con h3{
+    color:#fff
+}
+.footer-section .contianer .i-con {
+    text-align: center;
+}
+.footer-section .contianer .i-con {
+    text-align: center;
+}
+.footer-section .contianer .i-con p{
+    padding-top: 22px;
+}
+.footer-section .contianer .i-con .fa-brands{
+    color: #fff;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 5px;
+}
+.footer-section .contianer .about{
+    text-align: center;
+    color: #fff;
+}
+.footer-section .contianer .about p{
+    padding-top: 22px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #a7a6a6;
+}
+
+
+.cadit-section{
+    background-color: #313454;
+    padding: 30px 530px;
+    color: #8d8787;
+    text-align: center;
+}
+.cadit-section p b{
+    color: #E84545;
+    font-size: 20px;
+}
+.cadit-section p i{
+    color: #ffffff;
+}
