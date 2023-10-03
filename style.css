@@ -19,13 +19,14 @@ ul li{
 .contianer{
     padding: 0 15px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 .header-section .contianer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    max-width: 1200px;
+    
     border-bottom: 1px solid rgba(128, 128, 128, 0.4);
 }
 .header-section .contianer .header-ber a{
@@ -40,6 +41,7 @@ ul li{
 .header-section {
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 .header-section .contianer .header-manu ul{
     display: flex;
@@ -93,43 +95,6 @@ ul li{
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
-   
-}
-
-@media screen and (max-width: 900px) {
-    .header-section .contianer .header-manu ul{
-        display: none;
-    }
-    .header-section .contianer .header-ber{
-        display: inline-block;
-    }
-    .header-section .contianer{
-        height: 80px;
-        padding: 0 30px;
-    }
-    .banner-section .contianer{
-        
-    }
-    .banner-section .contianer h2{
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 35px;
-    text-align: center;
-    }
-    .banner-section .contianer p{
-    font-size: 15px;
-    font-weight: 300px;
-    margin-top: 20px;
-    margin-bottom: 36px;
-    text-align: center;
-    padding: 0 20px;
-    }
-    .banner-section .contianer a{
-        padding: 10px 35px;
-        font-weight: 400;
-    }
-    
 }
 .service-section{
     padding: 120px 0;
@@ -361,7 +326,6 @@ ul li{
     font-family: 'Raleway', sans-serif;
     color: #a7a6a6;
 }
-
 
 .cadit-section{
     background-color: #313454;

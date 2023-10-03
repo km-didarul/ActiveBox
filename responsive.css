@@ -1,0 +1,81 @@
+@media screen and (max-width: 1150px) {
+    .header-section .contianer .header-manu ul{
+        display: none;
+    }
+    .header-section .contianer .header-ber{
+        display: inline-block;
+
+    }
+    .header-section .contianer{
+        height: 80px;
+        padding: 0 100px;
+        max-width: 1200px;
+        
+    }
+    .banner-section .contianer{
+        
+    }
+    .banner-section .contianer h2{
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .banner-section .contianer p{
+        font-size: 18px;
+        font-weight: 400px;
+        margin-top: 20px;
+        margin-bottom: 36px;
+        padding: 0 90px;
+    }
+    .banner-section .contianer a{
+        padding: 10px 35px;
+        font-weight: 400;
+    }
+
+    .service-section .contianer{
+        justify-content: space-between;
+        padding: 0 30px;
+        column-gap: 5%;
+    }
+    .service-section .contianer .service-item{
+        max-width: 45%;
+    }
+    .gallery-section{
+        padding: 0 10px;
+    }
+
+    .gallery-section .gallery-item{
+        max-width: 49.5%;
+    }
+
+    .team-section .contianer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    .team-section .contianer .image-item{
+        max-width: 48%;
+        text-align: center;
+    }
+    .female-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .female-section .female-section-div{
+        text-align: center;
+        max-width: 100%;
+    }
+    .female-section .text{
+        max-width: 100%;
+    }
+    .footer-section .contianer .location p{
+        padding: 20px 20px 0 20px;
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;
+        color: #a7a6a6;
+    }
+    .cadit-section{
+        padding: 30px 30px;
+    }
+}
